@@ -5,7 +5,7 @@ import Tabel from "../components/tabel";
 
 const Page = async () => {
   const response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/ideas?page[number]=1&page[size]=10&append[]=small_image&append[]=medium_image&sort=-published_at`,);
+    `${process.env.NEXT_PUBLIC_API_BASE_URL}`);
   const data = await response.json();
   console.log(data);
 
